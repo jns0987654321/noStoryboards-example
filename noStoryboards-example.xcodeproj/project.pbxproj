@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		9C04EEF11CAB6D7900680781 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C04EEF01CAB6D7900680781 /* AppDelegate.swift */; };
-		9C04EEF31CAB6D7900680781 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C04EEF21CAB6D7900680781 /* ViewController.swift */; };
-		9C04EEF61CAB6D7900680781 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C04EEF41CAB6D7900680781 /* Main.storyboard */; };
+		9C04EEF31CAB6D7900680781 /* YellowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C04EEF21CAB6D7900680781 /* YellowVC.swift */; };
 		9C04EEF81CAB6D7900680781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C04EEF71CAB6D7900680781 /* Assets.xcassets */; };
 		9C04EEFB1CAB6D7900680781 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C04EEF91CAB6D7900680781 /* LaunchScreen.storyboard */; };
+		9C04EF031CAB6E0700680781 /* YellowVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C04EF021CAB6E0700680781 /* YellowVC.xib */; };
+		9C04EF081CAB709000680781 /* BlueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C04EF061CAB709000680781 /* BlueVC.swift */; };
+		9C04EF091CAB709000680781 /* BlueVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C04EF071CAB709000680781 /* BlueVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9C04EEED1CAB6D7900680781 /* noStoryboards-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "noStoryboards-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C04EEF01CAB6D7900680781 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9C04EEF21CAB6D7900680781 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9C04EEF51CAB6D7900680781 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C04EEF21CAB6D7900680781 /* YellowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowVC.swift; sourceTree = "<group>"; };
 		9C04EEF71CAB6D7900680781 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C04EEFA1CAB6D7900680781 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C04EEFC1CAB6D7900680781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C04EF021CAB6E0700680781 /* YellowVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YellowVC.xib; sourceTree = "<group>"; };
+		9C04EF061CAB709000680781 /* BlueVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueVC.swift; sourceTree = "<group>"; };
+		9C04EF071CAB709000680781 /* BlueVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlueVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,32 @@
 		9C04EEEF1CAB6D7900680781 /* noStoryboards-example */ = {
 			isa = PBXGroup;
 			children = (
+				9C04EF051CAB6E1500680781 /* Controller */,
+				9C04EF041CAB6E0E00680781 /* View */,
 				9C04EEF01CAB6D7900680781 /* AppDelegate.swift */,
-				9C04EEF21CAB6D7900680781 /* ViewController.swift */,
-				9C04EEF41CAB6D7900680781 /* Main.storyboard */,
 				9C04EEF71CAB6D7900680781 /* Assets.xcassets */,
 				9C04EEF91CAB6D7900680781 /* LaunchScreen.storyboard */,
 				9C04EEFC1CAB6D7900680781 /* Info.plist */,
 			);
 			path = "noStoryboards-example";
+			sourceTree = "<group>";
+		};
+		9C04EF041CAB6E0E00680781 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9C04EF071CAB709000680781 /* BlueVC.xib */,
+				9C04EF021CAB6E0700680781 /* YellowVC.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9C04EF051CAB6E1500680781 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9C04EEF21CAB6D7900680781 /* YellowVC.swift */,
+				9C04EF061CAB709000680781 /* BlueVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +145,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C04EF091CAB709000680781 /* BlueVC.xib in Resources */,
+				9C04EF031CAB6E0700680781 /* YellowVC.xib in Resources */,
 				9C04EEFB1CAB6D7900680781 /* LaunchScreen.storyboard in Resources */,
 				9C04EEF81CAB6D7900680781 /* Assets.xcassets in Resources */,
-				9C04EEF61CAB6D7900680781 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +159,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C04EEF31CAB6D7900680781 /* ViewController.swift in Sources */,
+				9C04EEF31CAB6D7900680781 /* YellowVC.swift in Sources */,
 				9C04EEF11CAB6D7900680781 /* AppDelegate.swift in Sources */,
+				9C04EF081CAB709000680781 /* BlueVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9C04EEF41CAB6D7900680781 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9C04EEF51CAB6D7900680781 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9C04EEF91CAB6D7900680781 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -252,10 +268,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "noStoryboards-example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.juniorsamaroo.noStoryboards-example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -263,10 +282,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "noStoryboards-example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.juniorsamaroo.noStoryboards-example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
